@@ -23,6 +23,8 @@ Example 2:
 Input: nums = [-1,1,0,-3,3]  
 Output: [0,0,9,0,0]
 
+## Tags - Array, 2 Pointers.
+
 ## Solution
 
 **Naive(v1)**
@@ -41,3 +43,10 @@ Output: [0,0,9,0,0]
    This is done in this way because essentially for any element i, from_start[i] contains the product prefix of the element, but the product suffix is stored in from_end[len(arr) - 1 - i]. Eg:  
    `final_arr[2] = prefix(num[0] * num[1]) * suffix(num[3])`  
    `final_arr[2] = from_start[2] * from_end[4-2-1] = 2 * 4 = 8`
+
+**Optimized(v2)**
+
+1. We use only O(1) extra space here, by essentially storing the prefix product and the suffix product in 2 variables.
+2. The time saving observation is that there is no need to make 2 passes through the array, 2 pointers working from 2 ends of the array will give the same result.
+3. In every step, the prefix product calculated till that point is multiplied with the suffix product till that point.
+   `[,,,x,,,](position i) => (product prefix till x) * (product suffix from x)`
