@@ -7,13 +7,13 @@ def maximumSwap(num):
         # add that to the result and continue
         if l[i] == max(l[i:]):
             result.append(l[i])
-        # if not, find the maximum number and swap with 0th index, 
+        # if not, find the maximum number, and its last index and swap with 0th index, 
         # then add the rest of the elements as is
         # and break
         else:
             temp = l[i:]
             max_num = max(temp)
-            index_max = "".join([str(x) for x in temp]).rfind(str(max_num))
+            index_max = "".join([str(x) for x in temp]).rfind(str(max_num)) # joins into a string and uses rfind to find the last index of the max number found
             temp[0],temp[index_max] = temp[index_max],temp[0]
             result = result + temp
             break
@@ -23,8 +23,7 @@ def maximumSwap(num):
     return int(f_result,10)
 
 
-#assert maximumSwap(98368) == 98863
+assert maximumSwap(98368) == 98863
 assert maximumSwap(2736) == 7236
 assert maximumSwap(1993) == 9913
 assert maximumSwap(193949) == 993941
-

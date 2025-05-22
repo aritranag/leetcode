@@ -1,0 +1,74 @@
+
+def setZeroes(matrix):
+    """
+    Do not return anything, modify matrix in-place instead.
+    """
+    numRows = len(matrix)
+    numCols = len(matrix[0])
+
+    col_list = []
+    for i in range(numRows):
+        row_has_zero = False
+        for j in range(numCols):
+            if matrix[i][j] == 0:
+                col_list.append(j)
+                row_has_zero = True
+        if row_has_zero:
+            matrix[i] = [0]*numCols
+    
+    for i in range(numRows):
+        for k in col_list:
+            matrix[i][k] = 0
+
+
+def setZeroesConstantSpace(matrix):
+    """
+    Do not return anything, modify matrix in-place instead.
+    No extra space is used. Use the first row and column as markers to indicate which rows and columns should be zeroed out.
+    Track the 1st row and column separately
+    """
+
+    numRows = len(matrix)
+    numCols = len(matrix[0])
+
+    row0, col0 = False, False
+
+    # Track whether the first column need to be zeroed
+    for i in range(numRows):
+        if matrix[i][0] == 0:
+            col0 = True
+            break
+
+    # Track whether the first row need to be zeroed
+    for i in range(numCols):
+        if matrix[0][i] == 0:
+            row0 = True
+            break
+
+    # Iterate through the rest of the matrix, starting from the 2nd row and column
+    for i in range(1,numRows):
+        for j in range(1,numCols):
+            if matrix[i][j] == 0:
+                # Mark the corresponding row and column as zeroed out
+                matrix[0][j] = 0
+                matrix[i][0] = 0
+
+    # Zero out the cells based on markers
+    for i in range(1,numRows):
+        for j in range(1,numCols):
+            if matrix[i][0] == 0 or matrix[0][j] == 0:
+                matrix[i][j] = 0
+
+    # Step 4: Zero first row/column if needed
+    if col0:
+        for i in range(numRows):
+            matrix[i][0] = 0
+
+    if row0:
+        for j in range(numCols):
+            matrix[0][j] = 0
+
+matrix = [[1,1,1],[1,0,1],[1,1,1]]#[[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+setZeroes(matrix)
+print(matrix)
+    
