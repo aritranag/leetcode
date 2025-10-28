@@ -16,39 +16,38 @@ A structured Markdown-style log for daily DSA practice using Python.
 
 ## 📅 Progress Log
 
-| Day   | Topic                      | Concepts Covered            | Problems Solved | Status | Notes      |
-| ----- | -------------------------- | --------------------------- | --------------- | ------ | ---------- |
-| Day 1 | Arrays & Prefix Sum Basics | Prefix Sum, Array Iteration | 2               | ✅     | Good start |
-
-| Day 2 | | | | ☐ | |
-| Day 3 | | | | ☐ | |
-| Day 4 | | | | ☐ | |
-| Day 5 | | | | ☐ | |
-| Day 6 | | | | ☐ | |
-| Day 7 | | | | ☐ | |
-| Day 8 | | | | ☐ | |
-| Day 9 | | | | ☐ | |
-| Day 10 | | | | ☐ | |
-| Day 11 | | | | ☐ | |
-| Day 12 | | | | ☐ | |
-| Day 13 | | | | ☐ | |
-| Day 14 | | | | ☐ | |
-| Day 15 | | | | ☐ | |
-| Day 16 | | | | ☐ | |
-| Day 17 | | | | ☐ | |
-| Day 18 | | | | ☐ | |
-| Day 19 | | | | ☐ | |
-| Day 20 | | | | ☐ | |
-| Day 21 | | | | ☐ | |
-| Day 22 | | | | ☐ | |
-| Day 23 | | | | ☐ | |
-| Day 24 | | | | ☐ | |
-| Day 25 | | | | ☐ | |
-| Day 26 | | | | ☐ | |
-| Day 27 | | | | ☐ | |
-| Day 28 | | | | ☐ | |
-| Day 29 | | | | ☐ | |
-| Day 30 | | | | ☐ | |
+| Day    | Topic                      | Concepts Covered            | Problems Solved | Status | Notes                        |
+| ------ | -------------------------- | --------------------------- | --------------- | ------ | ---------------------------- |
+| Day 1  | Arrays & Prefix Sum Basics | Prefix Sum, Array Iteration | 2               | ✅     | Good start                   |
+| Day 2  | Two Pointers Basics        | Slow/Fast pointer pattern   | 2               | ✅     | Practiced in-place array ops |
+| Day 3  |                            |                             |                 | ☐      |                              |
+| Day 4  |                            |                             |                 | ☐      |                              |
+| Day 5  |                            |                             |                 | ☐      |                              |
+| Day 6  |                            |                             |                 | ☐      |                              |
+| Day 7  |                            |                             |                 | ☐      |                              |
+| Day 8  |                            |                             |                 | ☐      |                              |
+| Day 9  |                            |                             |                 | ☐      |                              |
+| Day 10 |                            |                             |                 | ☐      |                              |
+| Day 11 |                            |                             |                 | ☐      |                              |
+| Day 12 |                            |                             |                 | ☐      |                              |
+| Day 13 |                            |                             |                 | ☐      |                              |
+| Day 14 |                            |                             |                 | ☐      |                              |
+| Day 15 |                            |                             |                 | ☐      |                              |
+| Day 16 |                            |                             |                 | ☐      |                              |
+| Day 17 |                            |                             |                 | ☐      |                              |
+| Day 18 |                            |                             |                 | ☐      |                              |
+| Day 19 |                            |                             |                 | ☐      |                              |
+| Day 20 |                            |                             |                 | ☐      |                              |
+| Day 21 |                            |                             |                 | ☐      |                              |
+| Day 22 |                            |                             |                 | ☐      |                              |
+| Day 23 |                            |                             |                 | ☐      |                              |
+| Day 24 |                            |                             |                 | ☐      |                              |
+| Day 25 |                            |                             |                 | ☐      |                              |
+| Day 26 |                            |                             |                 | ☐      |                              |
+| Day 27 |                            |                             |                 | ☐      |                              |
+| Day 28 |                            |                             |                 | ☐      |                              |
+| Day 29 |                            |                             |                 | ☐      |                              |
+| Day 30 |                            |                             |                 | ☐      |                              |
 
 ---
 
@@ -63,6 +62,14 @@ A structured Markdown-style log for daily DSA practice using Python.
 - **Mistakes to Avoid:** Resetting running sum incorrectly, ignoring left vs right sum logic in pivot problem.
 
 #### Day 2
+
+- **Topic:** Two Pointer Technique
+- **Key Concept Summary:** Learned how two pointers reduce time complexity and are used in-place for array manipulation.
+- **Questions Solved:** Remove Duplicates from Sorted Array, Move Zeroes
+- **Learnings:** It is important to understand pointer movement conditions, especially for the slow pointer.
+- **Mistakes to Avoid:** Need to identify edge cases earlier and revise pointer update logic.
+
+#### Day 3
 
 ...
 
