@@ -16,38 +16,39 @@ A structured Markdown-style log for daily DSA practice using Python.
 
 ## 📅 Progress Log
 
-| Day    | Topic                      | Concepts Covered            | Problems Solved | Status | Notes                        |
-| ------ | -------------------------- | --------------------------- | --------------- | ------ | ---------------------------- |
-| Day 1  | Arrays & Prefix Sum Basics | Prefix Sum, Array Iteration | 2               | ✅     | Good start                   |
-| Day 2  | Two Pointers Basics        | Slow/Fast pointer pattern   | 2               | ✅     | Practiced in-place array ops |
-| Day 3  |                            |                             |                 | ☐      |                              |
-| Day 4  |                            |                             |                 | ☐      |                              |
-| Day 5  |                            |                             |                 | ☐      |                              |
-| Day 6  |                            |                             |                 | ☐      |                              |
-| Day 7  |                            |                             |                 | ☐      |                              |
-| Day 8  |                            |                             |                 | ☐      |                              |
-| Day 9  |                            |                             |                 | ☐      |                              |
-| Day 10 |                            |                             |                 | ☐      |                              |
-| Day 11 |                            |                             |                 | ☐      |                              |
-| Day 12 |                            |                             |                 | ☐      |                              |
-| Day 13 |                            |                             |                 | ☐      |                              |
-| Day 14 |                            |                             |                 | ☐      |                              |
-| Day 15 |                            |                             |                 | ☐      |                              |
-| Day 16 |                            |                             |                 | ☐      |                              |
-| Day 17 |                            |                             |                 | ☐      |                              |
-| Day 18 |                            |                             |                 | ☐      |                              |
-| Day 19 |                            |                             |                 | ☐      |                              |
-| Day 20 |                            |                             |                 | ☐      |                              |
-| Day 21 |                            |                             |                 | ☐      |                              |
-| Day 22 |                            |                             |                 | ☐      |                              |
-| Day 23 |                            |                             |                 | ☐      |                              |
-| Day 24 |                            |                             |                 | ☐      |                              |
-| Day 25 |                            |                             |                 | ☐      |                              |
-| Day 26 |                            |                             |                 | ☐      |                              |
-| Day 27 |                            |                             |                 | ☐      |                              |
-| Day 28 |                            |                             |                 | ☐      |                              |
-| Day 29 |                            |                             |                 | ☐      |                              |
-| Day 30 |                            |                             |                 | ☐      |                              |
+| Day   | Topic                        | Concepts Covered            | Problems Solved | Status | Notes                        |
+| ----- | ---------------------------- | --------------------------- | --------------- | ------ | ---------------------------- |
+| Day 1 | Arrays & Prefix Sum Basics   | Prefix Sum, Array Iteration | 2               | ✅     | Good start                   |
+| Day 2 | Two Pointers Basics          | Slow/Fast pointer pattern   | 2               | ✅     | Practiced in-place array ops |
+| Day 3 | Two Pointers - Opposite Ends | Opposite pointer movement   | 2               | ✅     | Palindrome logic learned     |
+
+| Day 4 | | | | ☐ | |
+| Day 5 | | | | ☐ | |
+| Day 6 | | | | ☐ | |
+| Day 7 | | | | ☐ | |
+| Day 8 | | | | ☐ | |
+| Day 9 | | | | ☐ | |
+| Day 10 | | | | ☐ | |
+| Day 11 | | | | ☐ | |
+| Day 12 | | | | ☐ | |
+| Day 13 | | | | ☐ | |
+| Day 14 | | | | ☐ | |
+| Day 15 | | | | ☐ | |
+| Day 16 | | | | ☐ | |
+| Day 17 | | | | ☐ | |
+| Day 18 | | | | ☐ | |
+| Day 19 | | | | ☐ | |
+| Day 20 | | | | ☐ | |
+| Day 21 | | | | ☐ | |
+| Day 22 | | | | ☐ | |
+| Day 23 | | | | ☐ | |
+| Day 24 | | | | ☐ | |
+| Day 25 | | | | ☐ | |
+| Day 26 | | | | ☐ | |
+| Day 27 | | | | ☐ | |
+| Day 28 | | | | ☐ | |
+| Day 29 | | | | ☐ | |
+| Day 30 | | | | ☐ | |
 
 ---
 
@@ -71,12 +72,23 @@ A structured Markdown-style log for daily DSA practice using Python.
 
 #### Day 3
 
+- **Topic:** Two Pointers – Opposite Ends
+- **Key Concept Summary:** Learned how to move pointers inward from both ends to efficiently compare values.
+- **Questions Solved:** Reverse String, Valid Palindrome
+- **Learnings:** Useful for comparing values from both sides without extra memory.
+- **Mistakes to Avoid:** Ensure correct stopping condition and pointer movement.
+
+#### Day 4
+
 ...
 
 ---
 
 ### ✅ Patterns Learned
 
+- Prefix Sum ✅
+- Two Pointers (same direction) ✅
+- Two Pointers (opposite direction) ✅
 - Prefix Sum ✅
 
 ### ✅ Study Checklist
