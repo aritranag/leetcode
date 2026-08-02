@@ -3,7 +3,8 @@ def twoSum(nums : list[int], target : int):
     # target : 2 value in num must sum up to target
     # return -> index values that sums up to target, lowest first
 
-    # create a hash map of the existing values
+    # create a hash map of the existing values in a single pass
+    # check for the existence of the complement in the array, if complement exists then return the indices
     value_map = {}
     for i,n in enumerate(nums):
         diff = target - n
