@@ -1,5 +1,5 @@
 def encode(strs: list[str]) -> str:
-    
+    # for encoding add the string length and a special char to denote its end
     if len(strs) == 0:
         return ""
     else:
@@ -12,6 +12,7 @@ def encode(strs: list[str]) -> str:
 
 
 def decode(s : str) -> list[str]:
+    # find the length till the special char and then extract the string based on the length
     if s == "":
         return []
 
