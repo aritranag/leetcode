@@ -1,3 +1,20 @@
+'''
+Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
+Each product is guaranteed to fit in a 32-bit integer.
+Follow-up: Could you solve it in O(n)O(n) time without using the division operation?
+
+Input: nums = [1,2,4,6]
+Output: [48,24,12,8]
+
+Input: nums = [-1,0,1,2,3]
+Output: [0,-6,0,0,0]
+'''
+
+'''
+Key Insight : Default is to divide (be careful of divide by zero)
+Alternate : Use a prefix product and postfix product, to use a single array, first compute the prefix product and the loop from the end and keep on multiplying a running product and store the result in the appropriate place
+'''
+
 def productExceptSelf(nums : list[int]) -> list[int]:
     product = 1
     zero_count = 0

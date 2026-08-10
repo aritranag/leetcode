@@ -1,3 +1,12 @@
+'''
+Design an algorithm to encode a list of strings to a string. 
+The encoded string is then sent over the network and is decoded back to the original list of strings.
+'''
+
+'''
+Key Insight : Counting the chars in a string and putting the length before the string will allow to encode any string. Put a delimiter between the length and the start and make sure to read till the delimter since the length can be more than 1 character
+'''
+
 def encode(strs: list[str]) -> str:
     # for encoding add the string length and a special char to denote its end
     if len(strs) == 0:

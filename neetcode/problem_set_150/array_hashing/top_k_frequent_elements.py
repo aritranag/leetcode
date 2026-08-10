@@ -1,3 +1,21 @@
+'''
+Given an integer array nums and an integer k, return the k most frequent elements within the array.
+The test cases are generated such that the answer is always unique.
+You may return the output in any order.
+
+Input: nums = [1,2,2,3,3,3], k = 2
+Output: [2,3]
+
+Input: nums = [7,7], k = 1
+Output: [7]
+'''
+
+
+'''
+Key Insight : Frequency maps for all characters, then sort the key,value pairs in descending by frequency and get the k most frequent pairs
+Alternate (TODO) : Use a min heap to keep the k most frequent pairs, any time there is a frequency update, if it is greater than the min, modify the heap.
+'''
+
 def topKFrequent(nums : list[int], k: int) -> list[int]:
     # find out frequency of the ints in the array
     frequency = {}

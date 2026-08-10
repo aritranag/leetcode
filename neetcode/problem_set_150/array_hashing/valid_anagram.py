@@ -1,3 +1,21 @@
+'''
+Given two strings s and t, return true if the two strings are anagrams of each other, otherwise return false.
+
+An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
+
+Input: s = "racecar", t = "carrace"
+Output: true
+
+Input: s = "jar", t = "jam"
+Output: false
+'''
+
+'''
+Key Insight : Create a frequency map and check for each character #FrequencyMap
+Alternate : Exploit the fact that all chars are lower case and create an array of counts for all chars, positive for one string, negative for other
+'''
+
+
 # my Solution (uses less time)
 def isAnagram(s : str, t: str):
     # first check length, if length is different, can't be anagram
