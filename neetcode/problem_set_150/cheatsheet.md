@@ -2,3 +2,5 @@
    - Be careful of string keys, they cost O(n) during first creation and avg O(n) during lookups
 2. Strings are immutable in Python so, any string addition creates a new string -> O(n)
 3. If you have to keep track of k-max or min element use a heap
+4. If there is a sorted array or a range to search consider binary search
+5. For rotated sorted array, the pivot is the min element, find the pivot and you get 2 sorted arrays in 2 halves
