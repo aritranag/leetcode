@@ -6,41 +6,27 @@ class ListNode:
         self.val = val
         self.next = next
 
+    def append(self, data):
+        # Traverse from the head and append the node at the end
+        current = self
+        while current.next is not None:
+            current = current.next
+        current.next = ListNode(data)
 
-class MyLinkedList:
-    '''
-    Defines my own version of a single Linked List
-    '''
-    def __init__(self):
-        # Creates a linked list with a single node val
-        self.head = None
-        self.tail = None
-
-    def append(self, val=0):
-
-        _newNode = ListNode(val)
-
-        # if the list is empty then update the head
-        if not self.head:
-            self.head = _newNode
-            self.tail = _newNode
-            return
-        else:
-            # append it to the tail
-            self.tail.next = _newNode
-            self.tail = _newNode
-        
-
-    def prepend(self,val=0):
-        # Adds a node to the beginning of the list
-        _newNode = ListNode(val,self.head)
-        self.head = _newNode
-
+    
     def display(self):
-        # A string representation of the linked list
-        _tmp = self.head
-        while _tmp is not None:
-            print(_tmp.val,end='')
-            if _tmp.next is not None:
-                print(' -> ',end='')
-            _tmp = _tmp.next
+        # Displays the nodes of the linked list
+        current = self
+        while current is not None:
+            print(current.val, end="")
+            current = current.next
+            if current:
+                print(' -> ',end="")
+        print()
+
+
+# node = ListNode(1)
+# node.append(2)
+# node.append(4)
+# node.append(10)
+# node.display()
