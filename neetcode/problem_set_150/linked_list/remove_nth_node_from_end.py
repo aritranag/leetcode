@@ -43,13 +43,37 @@ def removeNthFromEnd(head : ListNode,n:int):
 
     return head
 
+def removeNthFromEnd_Pointer(head : ListNode,n : int):
+    # use 2 pointer technique, one n steps removed from another but moves at the same speed
+    dummy = ListNode(-1) # dummy node to point to the head, such that head can be removed if needed
+    dummy.next = head
+
+    left, right = dummy, head
+
+    # move the right pointer n nodes
+    while n>0:
+        right = right.next
+        n -= 1
+
+    # iterate both pointers till the right pointer is at the end, then left will be exactly n nodes before the end
+    while right:
+        right = right.next
+        left = left.next
+
+    # skip the needed node 
+    left.next = left.next.next
+
+    return dummy.next
+
+
+
 
 arr = [1,2,4,8]
 head = ListNode(arr[0])
 for i in range(1,len(arr)):
     head.append(arr[i])
 
-n = 1
+n = 4
 head.display()
-head = removeNthFromEnd(head, n)
+head = removeNthFromEnd_Pointer(head, n)
 head.display()
